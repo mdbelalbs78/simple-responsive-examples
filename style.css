@@ -29,3 +29,10 @@ img{
     grid-template-columns: 1fr;
   }
 }
+/* tablet device responsive  */
+@media screen and (min-width: 576px) and (max-width: 992px){
+  .row{
+    flex-direction: column;
+    height: auto;
+  }
+}
