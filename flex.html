@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Responsive</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            background-color: gray;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        @media screen  and (max-width: 576px){
+            .container{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexible Flex</h2>
+    <div class="container">
+        <div class="box">
+           <h3>First Box</h3>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa porro explicabo quod assumenda cumque? Tempora debitis sequi laborum aspernatur. Dolorem?</p>
+        </div>
+        <div class="box">
+          <h3>Second Box</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, similique esse ut optio neque consectetur officiis nulla laborum atque commodi?</p>
+        </div>
+    </div>
+</body>
+</html>
